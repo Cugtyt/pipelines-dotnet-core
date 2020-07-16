@@ -17,6 +17,6 @@ steps:
   displayName: 'dotnet build $(buildConfiguration)'
 - task: AzureWebApp@1
   inputs:
-    azureSubscription: 'Visual Studio Enterprise Subscription'
+    azureSubscription: 'Visual Studio Enterprise'
     appName: 'HeraWiki'
     package: $(System.DefaultWorkingDirectory)/**/*.zip
